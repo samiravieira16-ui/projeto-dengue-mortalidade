@@ -3,7 +3,7 @@
 
 ## 1. Tema e Problema Definido
 
-**Tema:** Análise dos fatores determinantes da mortalidade por Dengue no Brasil a partir de dados secundários do SINAN.
+**Tema:** Análise dos fatores determinantes da Letalidad por Dengue no Brasil a partir de dados secundários do SINAN.
 
 **Problema:** Embora a Dengue seja uma doença sazonal conhecida, a taxa de letalidade varia drasticamente conforme o perfil do paciente. O ponto central deste projeto é identificar: **Quais combinações de fatores (comorbidades específicas, faixa etária e sexo) estão mais fortemente associadas ao óbito e qual é a janela temporal crítica (dias após o sintoma) em que esses óbitos ocorrem?** A ausência de um padrão claro sobre o tempo de evolução clínica em pacientes com comorbidades dificulta a triagem prioritária e o manejo hospitalar imediato, tornando essencial a identificação desses grupos de risco para reduzir a mortalidade evitável.
 
