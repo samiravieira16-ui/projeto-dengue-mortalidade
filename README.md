@@ -1,5 +1,5 @@
 
-# Projeto Dengue letalidade: Fatores de Risco e Evolução Clínica (2021-2025)
+# Projeto Dengue Letalidade: Fatores de Risco e Evolução Clínica (2021-2025)
 
 ## 1. Tema e Problema Definido
 
