@@ -1,5 +1,5 @@
 
-# Projeto Dengue Mortalidade: Fatores de Risco e Evolução Clínica (2021-2025)
+# Projeto Dengue letalidade: Fatores de Risco e Evolução Clínica (2021-2025)
 
 ## 1. Tema e Problema Definido
 
@@ -22,7 +22,7 @@ A base de dados é extraída do **SINAN (Sistema de Informação de Agravos de N
 | :--- | :--- | :--- |
 | `sg_uf_not` | Geográfica | Identificar variações regionais na letalidade. |
 | `dt_sin_pri` | Temporal | Marco zero do paciente. Essencial para calcular a velocidade da doença. |
-| `cs_sexo` | Demográfica | Verificar disparidades de mortalidade entre sexos biológicos. |
+| `cs_sexo` | Demográfica | Verificar disparidades de letalidade entre sexos biológicos. |
 | `nu_idade_n` | Demográfica | Base para criação de faixas etárias (infantil, adulto, idoso). |
 | `dt_obito` | Desfecho | Variável alvo para o cálculo do intervalo de tempo de sobrevivência. |
 | `sorotipo` | Viral | Analisar se sorotipos específicos (DENV-1 a 4) são mais letais em grupos de risco. |
@@ -38,11 +38,11 @@ A base de dados é extraída do **SINAN (Sistema de Informação de Agravos de N
 Investigar o perfil epidemiológico e clínico dos pacientes que evoluíram para óbito por dengue no Brasil, estabelecendo a correlação entre vulnerabilidades biológicas e a velocidade da progressão da doença.
 
 ### Objetivos Específicos
-* **Mapear a Taxa de Mortalidade por Comorbidade:** Identificar qual agravo preexistente apresenta a maior taxa de letalidade proporcional no banco de dados.
-* **Analisar a Variável "Tempo":** Calcular o intervalo médio de dias entre o primeiro sintoma (`dt_sin_pri`) e o óbito, comparando a velocidade da doença em diferentes grupos.
-* **Cruzar Perfil Demográfico e Gravidade:** Verificar a prevalência de formas graves da doença por sexo e faixa etária.
-* **Subsídio à Triagem:** Propor, com base nos dados, perfis de pacientes que devem ser classificados como "Risco Imediato" no momento da notificação.
 
+* **Taxa de Letalidade por Sorotipo:** Determinar a letalidade específica para cada sorotipo circulante, avaliando se há predominância de óbitos associada a uma variante viral específica.
+* **Análise de Comorbidades:** Mapear a prevalência de doenças preexistentes nos casos fatais, identificando qual agravo apresenta a maior taxa de letalidade proporcional.
+* **Severidade e Demografia:** Correlacionar a prevalência de formas graves da doença com as variáveis de sexo e faixa etária.
+* **Dinâmica Temporal do Óbito:** Calcular o intervalo médio de dias entre o primeiro sintoma (`dt_sin_pri`) e o óbito, comparando a velocidade da doença entre diferentes grupos.
 ---
 
 ## 📂 Estrutura de Diretórios (Local)
@@ -50,15 +50,15 @@ Investigar o perfil epidemiológico e clínico dos pacientes que evoluíram para
 Para espelhar o trabalho realizado no Colab em seu ambiente local (VS Code), utilize a seguinte estrutura:
 
 ```text
-PROJETO_DENGUE_SINAN/
-├── data/
-│   ├── raw/                # CSV original do Kaggle
-│   └── processed/          # Dados limpos exportados do Colab
-├── docs/                   # Dicionário de dados (PDF) e referências
-├── notebooks/
-│   ├── 01_notebook_limpeza.ipynb    # Limpeza, tratamento de datas e comorbidades
-│   └── 02_analise_mortalidade.ipynb # Análise estatística e cruzamentos
-├── results/
-│   └── visualizacao.py     # Script para geração automática de gráficos
-├── requirements.txt        # Bibliotecas (pandas, numpy, seaborn, matplotlib)
-└── README.md               # Documentação do projeto
+PROJETO-DENGUE-MORTALIDADE/
+├── analises/                   # Scripts para processamento dos Objetivos Específicos:
+│   ├── Letalidade por Sorotipos
+│   ├── Dinâmica Temporal (Início de Sintomas ao Óbito)
+│   ├── Cruzamento de Severidade e Demografia
+│   └── Mapeamento de Letalidade por Comorbidades
+├── docs/                       # Documentação técnica e materiais de referência
+├── Execução_dos_projetos.ipynb  # Notebook principal que integra e executa as análises
+├── install_UV.txt              # Guia de configuração do ambiente via gerenciador UV
+├── LICENSE                     # Licença de uso do repositório
+├── README.md                   # Documentação principal e visão geral
+└── requirements.txt            # Dependências Python para replicação do projeto
