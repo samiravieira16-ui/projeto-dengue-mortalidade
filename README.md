@@ -56,7 +56,7 @@ Investigar o perfil epidemiológico e clínico dos pacientes que evoluíram para
 Para espelhar o trabalho realizado no Colab em seu ambiente local (VS Code), utilize a seguinte estrutura:
 
 ```text
-PROJETO-DENGUE-MORTALIDADE/
+PROJETO-DENGUE-LETALIDADE/
 ├── analises/                   # Scripts para processamento dos Objetivos Específicos:
 │   ├── Letalidade por Sorotipos
 │   ├── Dinâmica Temporal (Início de Sintomas ao Óbito)
